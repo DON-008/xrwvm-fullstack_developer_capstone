@@ -65,6 +65,7 @@ try {
   } catch (error) {
     res.status(500).json({ error: 'Error fetching documents' });
   }
+
 });
 
 // Express route to fetch Dealers by a particular state
@@ -77,7 +78,6 @@ try {
     res.status(500).json({ error: 'Error fetching documents' });
   }
 });
-
 
 // Express route to fetch dealer by a particular id
 app.get('/fetchDealer/:id', async (req, res) => {
